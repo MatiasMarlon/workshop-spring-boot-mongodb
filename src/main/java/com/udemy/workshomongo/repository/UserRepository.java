@@ -1,4 +1,4 @@
-package com.udemy.workshomongo.resources.repository;
+package com.udemy.workshomongo.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

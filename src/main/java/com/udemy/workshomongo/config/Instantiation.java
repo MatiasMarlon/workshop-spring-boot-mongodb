@@ -7,7 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
 import com.udemy.workshomongo.domain.User;
-import com.udemy.workshomongo.resources.repository.UserRepository;
+import com.udemy.workshomongo.repository.UserRepository;
 
 @Configuration
 public class Instantiation implements CommandLineRunner {
