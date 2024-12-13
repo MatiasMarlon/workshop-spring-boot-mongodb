@@ -1,11 +1,13 @@
 package com.udemy.workshomongo.resources;
 
 import java.net.URI;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -53,4 +55,10 @@ return ResponseEntity.ok().body(list);
 
 
 }
+		
+		@DeleteMapping(value = "/{id}")
+		public ResponseEntity<Void> delete(@PathVariable String id) {
+			service.delete(id);
+			return ResponseEntity.noContent().build();
+	}
 }
